@@ -5,26 +5,18 @@ function App() {
   // Array of product data with new image URLs
   const products = [
     {
-      name: 'Eco-Friendly Animal Puzzles',
-      description: 'Handcrafted puzzles for a smarter, greener playtime.',
       image: 'https://i.ibb.co/qYL0XyC9/Whats-App-Image-2025-08-02-at-22-11-18-1.jpg', // New product image URL
       alt: 'Eco-Friendly Animal Puzzles',
     },
     {
-      name: 'Resin Miniature Car Collection',
-      description: 'Durable, artistic, and safe. A collector\'s dream.',
       image: 'https://i.ibb.co/MxbJf5NK/Whats-App-Image-2025-08-02-at-22-11-16.jpg', // New product image URL
       alt: 'Resin Miniature Car Collection',
     },
     {
-      name: 'Ocean Wave Keychains',
-      description: 'Carry a piece of the ocean with you, a reminder of what we protect.',
       image: 'https://i.ibb.co/BHWY18S6/Whats-App-Image-2025-08-02-at-22-11-17.jpg', // New product image URL
       alt: 'Ocean Wave Keychains',
     },
     {
-      name: 'Custom Resin Art Frames',
-      description: 'Preserve your memories in a beautiful, sustainable way.',
       image: 'https://i.ibb.co/VchPFszc/Whats-App-Image-2025-07-31-at-23-01-23.jpg', // New product image URL
       alt: 'Custom Resin Art Frames',
     },
@@ -77,8 +69,7 @@ function App() {
               <div key={index} className="bg-gray-50 rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
                 <img src={product.image} alt={product.alt} className="w-full h-48 object-cover" />
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-                  <p className="text-gray-600 text-sm">{product.description}</p>
+                  {/* Product name and description removed */}
                 </div>
               </div>
             ))}
